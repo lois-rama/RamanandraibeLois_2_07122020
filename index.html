@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a7bb10ddf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
 </head>
 <body>
-    
+<!-- HEADER -->
+    <header>
+        <img class="headerlogo" src="/images/Reservia.svg" alt="Logo de Reservia">
+        <nav class="headernav">
+         <a href="#">Hébergements</a>
+         <a href="#">Activités</a>
+        </nav>
+        <a href="#">S'inscrire</a>
+    </header>
+<!-- /HEADER -->
+
+<!-- MAIN -->
+    <main>
+        <!-- SEARCH -->
+        <section class="search">
+         <h1>Trouvez votre hébergement pour des vacances de rêve
+         <span class="Search_subtitle">En centre ville ou en pleine nature</span></h1>
+         <form>
+            <i class="fas fa-map-marker-alt"></i>    
+            <input type="search" id="place_search" placeholder="Marseille, France">
+            <button class="search_button">
+                <span>Rechercher</span>
+                <i class="fas fa-search"></i>
+            </button>
+         </form>
+         <div class="Search_filters">
+            <h2>Filtres</h2>
+            <div class="filter">
+              <div class="filters_icons">
+               <i class="fas fa-money-bill-wave filter_icon"></i></div>
+               <span class="Filter_name">Économique</span></div>
+            <div class="filter">
+              <div class="filters_icons">
+                <i class="fas fa-child filter_icon"></i></div>
+               <span class="Filter_name">Familial</span></div>
+            <div class="filter">
+              <div class="filters_icons">
+                <i class="fas fa-heart filter_icon"></i></div>
+               <span class="Filter_name">Romantique</span></div>
+            <div class="filter">
+              <div class="filters_icons">
+                <i class="fas fa-dog filter_icon"></i></div>
+               <span class="Filter_name">Animaux autorisés</span></div>         
+         </div>
+         <div class="info_availability">
+             <div class="info_availability_icon">
+                <i class="fas fa-info info_icon"></i></div>
+             <p class="info_availability_text">Plus de 500 de logements sont disponibles dans cette ville.</p>
+         </div>           
+        </section>
+        <!-- /SEARCH -->
+    </main>
 </body>
 </html>
