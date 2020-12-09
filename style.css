@@ -1,8 +1,268 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
+main{ 
+    max-width: 1440px;
+    margin: 0px auto; }
+/* HEADER */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.headernav{
+    flex: 1;
+     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ nav a{
+    width: 162px;
+    text-align: center;
+    padding-top: 40px;
+}
+.signup{
+    color: #0065FC;
+    font-weight: 700;
+    width: 162px;
+    text-align: center;
+    padding-top: 48px;
+
+}
 .Search_subtitle{
     display: block;
     font-weight: 100;
     font-size: smaller;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
+nav a:focus{
+    color: #0065FC;
+    border-top: 3px solid#0065FC;
+}
+
+/* SEARCH */
+ form{
+    display: inline-flex;
+    max-width: 100%;
+ }
+ .searchicon{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+ }
+ .place_search{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+ }
+ .search_button{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+ 
+
+ }
+
+/* HOSTING */
+#hosting{
+    display: flex;
+    gap: 2.5rem;
+    height: auto;
+}
+
+.hostingmain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 0.6rem 2rem 2rem 2rem;
+}
+
+.hostingcards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 250px;
+    max-width: 550px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    border: 5px white solid;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+    transition: 0.3s all ease-in-out
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: none;
+}
+.card__image{
+    flex: 0 0 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card__title{
+font-size: 1rem;
+font-weight: bold;
+margin: 0.75rem 0 0.3rem 0.75rem;
+}
+.card__price{
+    font-size: 0.9rem;
+    margin: 0 0 0.3em 0.75rem
+}
+.card__grade{
+    margin: 0 0 0.3em 0.75rem
+}
+.grade_icon[data-active=true]{
+    color: #0065FC;
+}
+.grade_icon[data-active=false]{
+    color: #d1d1d1;
+}
+
+.show_more{
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+/* popular */
+
+.hostingpopular{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 0.6rem 2rem 2rem 2rem;
+}
+.popular_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.popularmain{
+justify-content: space-between;
+}
+.popularcard{
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 350px;
+    max-width: 440px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    border: 5px white solid;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+    transition: 0.3s all ease-in-out}
+
+.popularcard__image{
+    flex: 0 0 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.popularcard__grade{
+    margin: 4rem 0 0.3em 0.75rem
+}
+
+.popularcard:hover{
+    transform: scale(1.03);
+    box-shadow: none;
+}
+
+/* ACTIVITY */
+#activity{
+    display: flex;
+
+    margin: 4rem 0 3rem 0;
+}
+.activitymain{
+    flex-basis: 100%;;
+}
+
+.activitycards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.activitycard{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 250px;
+    max-width: 550px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+    transition: 0.3s all ease-in-out;
+
+}
+.activitycard:hover{
+    transform: scale(1.04)
+}
+.activitycard__image{
+    flex: 0 0 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.activitycard__title{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 1rem;
+}
+
+
+/* FOOTER */
+
+.footer_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 2rem;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
