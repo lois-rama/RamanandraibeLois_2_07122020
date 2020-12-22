@@ -67,6 +67,7 @@ nav a:focus{
   border-bottom: #F2F2F2 1px solid;
   box-sizing: border-box;
   width: 14rem;
+  padding-left: 2rem;
   font-size: 1rem;
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
@@ -74,7 +75,6 @@ nav a:focus{
  ::placeholder{
   color: black;
   opacity: 1;
-  padding: 2rem;
 }
  .search_button{
   background-color: #0065FC;
@@ -151,16 +151,13 @@ figure{
 #hosting{
   display: flex;
   gap: 2.5rem;
-  height: auto;flex-basis: 100%;
 }
 .hostingmain{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   background-color: #F2F2F2;
   border-radius: 10px;
   padding: 0.6rem 2rem 2rem 2rem;
-  
 }
 .hostingcards{
   display: flex;
@@ -168,7 +165,7 @@ figure{
   gap: 1.5rem;
 }
 .card{
-  flex: 1 0 210px;
+  flex: 1 0 225px;
   margin: 0;
   color: black;
   border-radius: 20px;
@@ -221,19 +218,19 @@ figure{
   background-color: #F2F2F2;
   border-radius: 10px;
   padding: 0.6rem 2rem 2rem 2rem;
-  flex-basis: 100%;
 }
 .popular_cards{
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  width: fit-content;
 }
 .popularfigure{
   display: flex;
 }
 .popularcard{
   display: flex;
-  flex: 1 0 240px;
+  flex: 1 0 250px;
   margin: 0;
   overflow: hidden;
   background: white;
@@ -466,8 +463,11 @@ li{
     padding: 0.5rem;
   }
 }
-@media screen and (max-width: 330px){
+@media screen and (max-width: 370px){
   ::placeholder{
-    font-size: 15px;
-    padding: 0.5rem;
+    font-size: 14px;
+  }
+  .place_search{
+    padding-left: 0;
+  }
 }
